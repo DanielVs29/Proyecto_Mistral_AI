@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "categoria": "Generacion de texto",
+    "prompt": "Redacta un correo formal de máximo 3 párrafos dirigido a la administración de un edificio, reportando una filtración de agua, solicitando una revisión urgente y pidiendo confirmación de recibido."
+  },
+  {
+    "id": 2,
+    "categoria": "Generacion de texto",
+    "prompt": "Escribe un párrafo persuasivo de 4 líneas para convencer a una pequeña empresa de adoptar herramientas de inteligencia artificial en su día a día."
+  },
+  {
+    "id": 3,
+    "categoria": "Resumen",
+    "prompt": "Resume el siguiente texto en exactamente 3 viñetas: La inteligencia artificial (IA) es un campo de la informática que se enfoca en crear sistemas capaces de realizar tareas que normalmente requieren inteligencia humana, como el aprendizaje, el razonamiento y la percepción. A lo largo de las décadas, ha evolucionado desde sistemas basados en reglas hasta redes neuronales profundas que pueden procesar grandes cantidades de datos. Hoy en día, la IA se aplica en múltiples industrias, mejorando la eficiencia operativa y creando nuevas oportunidades de negocio."
+  },
+  {
+    "id": 4,
+    "categoria": "Resumen",
+    "prompt": "Resume la trama principal de la película The Matrix en un solo párrafo de máximo 40 palabras."
+  },
+  {
+    "id": 5,
+    "categoria": "Correccion y traduccion",
+    "prompt": "Corrige todos los errores ortográficos y gramaticales del siguiente texto, devolviendo solo la versión corregida: 'el dia de ayer fuimos al parque y abia muchos pajaros cantando en los arboles'."
+  },
+  {
+    "id": 6,
+    "categoria": "Correccion y traduccion",
+    "prompt": "Traduce el siguiente texto del español al inglés con un tono formal y profesional: 'La implementación de este nuevo sistema reducirá los costos operativos en un veinte por ciento durante el próximo trimestre.'"
+  },
+  {
+    "id": 7,
+    "categoria": "Codigo",
+    "prompt": "Escribe una consulta SQL estándar para obtener los nombres y correos electrónicos de los clientes que han realizado compras mayores a 1000 dólares en la tabla 'pedidos'."
+  },
+  {
+    "id": 8,
+    "categoria": "Codigo",
+    "prompt": "Genera una función en Python llamada 'filtrar_pares' que reciba una lista de números enteros y devuelva una nueva lista que contenga únicamente los números pares. Añade comentarios al código."
+  },
+  {
+    "id": 9,
+    "categoria": "Razonamiento y veracidad",
+    "prompt": "Problema lógico: Si tienes un cajón completamente a oscuras con 10 calcetines negros y 10 calcetines blancos sueltos, ¿cuál es el número mínimo de calcetines que debes sacar para asegurarte de tener al menos un par del mismo color? Explica tu razonamiento paso a paso."
+  },
+  {
+    "id": 10,
+    "categoria": "Razonamiento y veracidad",
+    "prompt": "Pregunta factual: ¿Cuál es la capital de Australia y en qué año se fundó oficialmente? Proporciona una respuesta directa."
+  }
+]

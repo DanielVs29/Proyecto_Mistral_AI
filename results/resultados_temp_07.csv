@@ -1,0 +1,83 @@
+id,categoria,prompt,salida,tokens_generados,ttft_segundos,tokens_por_segundo
+1,Generacion de texto,"Redacta un correo formal de máximo 3 párrafos dirigido a la administración de un edificio, reportando una filtración de agua, solicitando una revisión urgente y pidiendo confirmación de recibido.","Sujeto: Solicitud de Revisión Urgente debido a una filtración de agua en el edificio
+
+Estimado Director,
+
+Agradecería expresar mi preocupación por el incidente de filtración de agua que se ha presentado en nuestro edificio. Este acontecimiento no solo ha causado daños en el área afectada, sino que también representa un peligro potencial para la seguridad de nuestro equipo y la propiedad de los inquilinos.
+
+Por favor, le solicito que se realice una revisión urgente de la infraestructura y los sistemas de agua para identificar la fuente de la filtración y garantizar que se tomen medidas para detenerla lo antes posible. Además, también se requerirá una evaluación de los daños y un plan de reparación adecuado.
+
+Espero que usted pueda dar prioridad a esta solicitud y confirmarme en breve el recibimiento y la acción planificada en respuesta a la filtración de agua en el edificio.
+
+Agradezco su atención y colaboración.
+
+Atentamente,
+[Nombre y apellido]
+[Número de teléfono]
+[Correo electrónico]",322,6.8648,10.32
+2,Generacion de texto,Escribe un párrafo persuasivo de 4 líneas para convencer a una pequeña empresa de adoptar herramientas de inteligencia artificial en su día a día.,"Adopte las herramientas de Inteligencia Artificial (IA) en su día a día y sálvate tiempo, recursos y errores humanos. La IA permite a las pequeñas empresas mejorar la productividad, reducir costos y mejorar la calidad de sus servicios. Esta tecnología revolucionaria es la clave para mantenerse competitiva en el mercado actual, donde la velocidad y precisión son fundamentales. No deje que su empresa se quede atrás; emprenda el camino hacia la modernidad y el éxito utilizando la IA.",144,2.6298,10.43
+3,Resumen,"Resume el siguiente texto en exactamente 3 viñetas: La inteligencia artificial (IA) es un campo de la informática que se enfoca en crear sistemas capaces de realizar tareas que normalmente requieren inteligencia humana, como el aprendizaje, el razonamiento y la percepción. A lo largo de las décadas, ha evolucionado desde sistemas basados en reglas hasta redes neuronales profundas que pueden procesar grandes cantidades de datos. Hoy en día, la IA se aplica en múltiples industrias, mejorando la eficiencia operativa y creando nuevas oportunidades de negocio.","1. Introducción: La inteligencia artificial (IA) es un campo de la informática que se dedica a crear sistemas capaces de realizar tareas que normalmente requieren inteligencia humana, incluyendo el aprendizaje, el razonamiento y la percepción.
+
+2. Evolución: A lo largo de las décadas, la IA ha evolucionado de sistemas basados en reglas a redes neuronales profundas que pueden procesar grandes cantidades de datos.
+
+3. Aplicaciones actuales: Hoy en día, la IA se aplica en múltiples industrias, mejorando la eficiencia operativa y creando nuevas oportunidades de negocio.",177,2.7686,9.89
+4,Resumen,Resume la trama principal de la película The Matrix en un solo párrafo de máximo 40 palabras.,"En el año 1999, un hacker llamado Thomas Anderson, en secreto Neo, descubre que la realidad que conoce es en realidad una simulación conocida como la Matriz, creada por extraterrestres llamados Máquinas para controlar a la humanidad. Asistido por Morpheus y sus aliados rebeldes, Neo acepta convertirse en el Mesías profético para terminar con la Matriz y liberar a los seres humanos.",117,2.4994,10.14
+5,Correccion y traduccion,"Corrige todos los errores ortográficos y gramaticales del siguiente texto, devolviendo solo la versión corregida: 'el dia de ayer fuimos al parque y abia muchos pajaros cantando en los arboles'.","El día de ayer fuimos al parque y habían muchos pájaros cantando en los árboles.
+
+Explicación:
+
+1. 'el dia' -> 'el día' (se agrega el apóstrofo)
+2. 'abia' -> 'habían' (se corrige la conjugación del verbo irregular 'haber')
+3. 'pajaros' -> 'pájaros' (se corrige la ortografía)
+4. 'cantando' -> 'cantando' (se corrige la ortografía)
+5. 'en los arboles' -> 'en los árboles' (se corrige la ortografía)",169,2.5516,9.77
+6,Correccion y traduccion,Traduce el siguiente texto del español al inglés con un tono formal y profesional: 'La implementación de este nuevo sistema reducirá los costos operativos en un veinte por ciento durante el próximo trimestre.',"The implementation of this new system will reduce operational costs by twenty percent during the next quarter.
+
+Here's the formal and professional translation: The proposed implementation of the new system is anticipated to result in a reduction of operational costs by twenty percent during the ensuing quarter.",57,2.6352,9.22
+7,Codigo,Escribe una consulta SQL estándar para obtener los nombres y correos electrónicos de los clientes que han realizado compras mayores a 1000 dólares en la tabla 'pedidos'.,"Para obtener los nombres y correos electrónicos de los clientes que han realizado compras mayores a 1000 dólares en la tabla 'pedidos', debemos utilizar una consulta SQL que se basa en un `JOIN` entre la tabla 'pedidos' y la tabla de clientes (suponiendo que en la tabla 'pedidos' existe una columna 'cliente_id' que relaciona las compras con los clientes y que en la tabla de clientes existe una columna 'nombre' y otra 'email').
+
+A continuación, presento la consulta SQL estándar que realiza el deseado:
+
+```sql
+SELECT clientes.nombre, clientes.email
+FROM pedidos
+INNER JOIN clientes
+ON pedidos.cliente_id = clientes.id
+WHERE pedidos.total_compra > 1000;
+```
+
+En esta consulta, `pedidos.cliente_id` y `clientes.id` deben ser idénticos en ambas tablas para que se realice el `JOIN` correctamente.
+
+Nota: Sustituye los nombres de tabla y columnas si corresponde a tu esquema de bases de datos.",301,2.586,8.08
+8,Codigo,Genera una función en Python llamada 'filtrar_pares' que reciba una lista de números enteros y devuelva una nueva lista que contenga únicamente los números pares. Añade comentarios al código.,"Aquí hay un ejemplo de una función en Python llamada `filtrar_pares` que filtra los números pares de una lista de números enteros:
+
+```python
+def filtrar_pares(numbers):
+    # La función recibe una lista de números enteros
+
+    # Utilizamos un compresión de lista para crear una nueva lista que contenga únicamente los números pares
+    # Utilizamos el operador modulo (%), que devuelve el resto de la división entre un número y 2. Si el resto es 0, el número es par.
+    # Por último, utilizamos el operador de asignación (=) para asignar el resultado a la nueva lista.
+    pares = [num for num in numbers if num % 2 == 0]
+
+    # Devolvemos la nueva lista de números pares
+    return pares
+```
+
+Por ejemplo, si llamamos a la función con la lista `numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`, la función devolverá la lista `[2, 4, 6, 8, 10]`.",308,2.5479,7.81
+9,Razonamiento y veracidad,"Problema lógico: Si tienes un cajón completamente a oscuras con 10 calcetines negros y 10 calcetines blancos sueltos, ¿cuál es el número mínimo de calcetines que debes sacar para asegurarte de tener al menos un par del mismo color? Explica tu razonamiento paso a paso.","Para garantizar que se sacen al menos dos calcetines del mismo color, debes sacar un mínimo de dos calcetines.
+
+Razonamiento:
+1. Primero, debes sacar un calcetín. Puede ser negro o blanco, no importa.
+2. A continuación, debes sacar otro calcetín. Si el segundo calcetín es del mismo color que el primero, ya tienes al menos un par del mismo color.
+3. Sin embargo, si el segundo calcetín es del color contrario al primero, tendrás un calcetín negro y un calcetín blanco, lo que no es un par.
+4. Para asegurarte de tener al menos un par del mismo color, debes sacar un tercer calcetín.
+5. Si el tercer calcetín es del mismo color que el primero, entonces tendrás al menos un par del mismo color.
+6. Sin embargo, si el tercer calcetín es del color contrario al primero y al segundo, tendrás un calcetín negro, un calcetín blanco y uno del color contrario, lo que no es un par.
+7. Para asegurarte de tener al menos un par del mismo color, debes sacar un cuarto calcetín.
+8. Si el cuarto calcetín es del mismo color que el primero, segundo o tercer, entonces tendrás al menos un par del mismo color.
+9. Sin embargo, si el cuarto calcetín es del color contrario a todos los demás, tendrás dos calcetines del mismo color y dos calcetines del color contrario, lo que no es un par.
+10. Por lo tanto, el mínimo número de calcetines que debes sacar para asegurarte de tener al menos un par del mismo color es 4.
+
+En resumen, el mínimo número de calcetines que debes sacar es 4 para asegurarte de tener al menos un par del mismo color.",470,2.5724,9.3
+10,Razonamiento y veracidad,Pregunta factual: ¿Cuál es la capital de Australia y en qué año se fundó oficialmente? Proporciona una respuesta directa.,"La capital de Australia es Canberra, y se fundó oficialmente en 1927.",23,2.5574,13.27

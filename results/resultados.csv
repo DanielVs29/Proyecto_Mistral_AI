@@ -1,0 +1,91 @@
+id,categoria,prompt,salida,tokens_generados,ttft_segundos,tokens_por_segundo
+1,Generacion de texto,"Redacta un correo formal de máximo 3 párrafos dirigido a la administración de un edificio, reportando una filtración de agua, solicitando una revisión urgente y pidiendo confirmación de recibido.","Sujeto: Solicitud de revisión urgente en relación con una filtración de agua en el edificio
+
+Estimados miembros de la administración del edificio,
+
+Estoy escribiendo para informarles de una filtración de agua que se ha producido en mi apartamento, en la unidad [number]. La filtración ha causado daños en mi propiedad y es una preocupación grave, ya que podría afectar a otras unidades del edificio si no se resuelve inmediatamente.
+
+Por favor, puedan realizar una revisión urgente de la situación y tomar las medidas necesarias para detener la filtración y evitar posibles daños adicionales. Es importante que me comunique en breve para confirmar que han recibido mi correo y para informarme de los pasos que serán tomados para resolver este problema.
+
+Muchas gracias por su atención y esfuerzo en este asunto.
+
+Atentamente,
+
+[Your Name]
+[Your Address]
+[Your Phone Number]
+[Your Email]",265,61.5064,5.28
+2,Generacion de texto,Escribe un párrafo persuasivo de 4 líneas para convencer a una pequeña empresa de adoptar herramientas de inteligencia artificial en su día a día.,"¡Emplear herramientas de inteligencia artificial (IA) puede ser la clave para que tu empresa alcanzará un éxito sin precedentes! A través de la IA, puedes automatizar tareas repetitivas y aburridas, reduciendo la carga de trabajo de tu equipo y aumentando su productividad. Además, la IA puede ayudar a identificar patrones y tendencias que no se perciben al ojo humano, lo que te permite tomar decisiones más informadas y confiables. Adopta la IA en tu empresa hoy mismo y disfruta de ventajas competitivas y un crecimiento sustentable. ¡No dejes que tu competencia se salte a ti en este nuevo campo!",186,2.8933,5.42
+3,Resumen,"Resume el siguiente texto en exactamente 3 viñetas: La inteligencia artificial (IA) es un campo de la informática que se enfoca en crear sistemas capaces de realizar tareas que normalmente requieren inteligencia humana, como el aprendizaje, el razonamiento y la percepción. A lo largo de las décadas, ha evolucionado desde sistemas basados en reglas hasta redes neuronales profundas que pueden procesar grandes cantidades de datos. Hoy en día, la IA se aplica en múltiples industrias, mejorando la eficiencia operativa y creando nuevas oportunidades de negocio.","1. La inteligencia artificial (IA) es una rama de la informática que crea sistemas que pueden realizar tareas inteligentes, como aprender, razonar y percibir.
+
+2. A lo largo de las décadas, la IA ha evolucionado de sistemas basados en reglas a redes neuronales profundas que procesan grandes cantidades de datos.
+
+3. Hoy en día, la IA se utiliza en muchas industrias, mejorando la eficiencia operativa y creando nuevas oportunidades de negocio.",143,2.9977,5.18
+4,Resumen,Resume la trama principal de la película The Matrix en un solo párrafo de máximo 40 palabras.,"En el futuro, la humanidad es esclavizada por máquinas, sin darse cuenta. El protagonista, Neo, es elegido por Morpheus para descubrir la verdad acerca de la naturaleza de la realidad y la lucha contra la dominación máquina en el mundo virtual conocido como ""la Matriz"".",82,3.4096,5.07
+5,Correccion y traduccion,"Corrige todos los errores ortográficos y gramaticales del siguiente texto, devolviendo solo la versión corregida: 'el dia de ayer fuimos al parque y abia muchos pajaros cantando en los arboles'.","El día de ayer fuimos al parque y había muchos pájaros cantando en los árboles.
+
+Correcciones:
+
+* ""el"" (pronombres indefinidos) -> ""el"" (artículo masculino singular)
+* ""dia de ayer"" (sin acento en ""día"") -> ""el día de ayer""
+* ""fuimos"" (espera acento agudo en ""í"") -> ""fuimos"" (sin acento agudo)
+* ""abia"" (de ""había"", forma contraction con ""haber"" + ""tiene"" -> ""había"" (forma conjugada de ""haber"")
+* ""pajaros"" (plural) -> ""pájaros"" (con tilde en la ""a"")
+* ""cantando"" (se escribe con ""nd"" en vez de ""nn"" después de ""c"") -> ""cantando""
+* ""en los arboles"" (sin acento en ""arboles"") -> ""en los árboles""",247,2.9268,5.24
+6,Correccion y traduccion,Traduce el siguiente texto del español al inglés con un tono formal y profesional: 'La implementación de este nuevo sistema reducirá los costos operativos en un veinte por ciento durante el próximo trimestre.',"The implementation of this new system is expected to reduce operational costs by twenty percent within the next quarter.
+
+(Translation Note: In this translation, I used the term ""expected"" to convey a sense of certainty or confidence in the statement, while ""within the next quarter"" was used to specify a time frame.)",67,2.9449,5.41
+7,Codigo,Escribe una consulta SQL estándar para obtener los nombres y correos electrónicos de los clientes que han realizado compras mayores a 1000 dólares en la tabla 'pedidos'.,"Aquí tienes una consulta SQL estándar que realiza la búsqueda requerida:
+
+```sql
+SELECT clientes.nombre, clientes.correo_electronico
+FROM pedidos
+JOIN clientes ON pedidos.id_cliente = clientes.id
+WHERE pedidos.total > 1000
+```
+
+En esta consulta, se están utilizando la tabla `pedidos` y `clientes`. Se une las dos tablas mediante el campo `id_cliente` de la tabla `pedidos` y `id` de la tabla `clientes`. Luego, se filtra los registros en la tabla `pedidos` donde el total de la compra es mayor a 1000 dólares. Finalmente, se seleccionan los campos `nombre` y `correo_electronico` de la tabla `clientes`.",217,2.8327,5.34
+8,Codigo,Genera una función en Python llamada 'filtrar_pares' que reciba una lista de números enteros y devuelva una nueva lista que contenga únicamente los números pares. Añade comentarios al código.,"Aquí tienes una función en Python llamada `filtrar_pares` que cumpla con las especificaciones que mencionaste. Comento el código para facilitar su comprensión.
+
+```python
+def filtrar_pares(lista_de_enteros):
+    """"""
+    Esta función recibe una lista de números enteros y devuelve una nueva lista que contenga únicamente los números pares.
+
+    Args:
+        lista_de_enteros (list): Lista de números enteros
+
+    Returns:
+        list: Nueva lista que contiene únicamente los números pares
+    """"""
+
+    # Creamos una nueva lista vacía para almacenar los números pares
+    pares = []
+
+    # Iteramos por cada elemento de la lista de entrada
+    for numero in lista_de_enteros:
+        # Si el número es par (su resto es cero cuando se divide por 2), lo agregamos a la nueva lista
+        if numero % 2 == 0:
+            pares.append(numero)
+
+    # Devolvemos la nueva lista con los números pares
+    return pares
+```
+
+Puedes usar esta función de la siguiente manera:
+
+```python
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+pares = filtrar_pares(numeros)
+print(pares)  # [2, 4, 6, 8]
+```",388,11.8419,5.46
+9,Razonamiento y veracidad,"Problema lógico: Si tienes un cajón completamente a oscuras con 10 calcetines negros y 10 calcetines blancos sueltos, ¿cuál es el número mínimo de calcetines que debes sacar para asegurarte de tener al menos un par del mismo color? Explica tu razonamiento paso a paso.","El razonamiento para resolver este problema se puede dividir en los siguientes pasos:
+
+1. Si sacas un calcetín negro, siempre vas a tener al menos un par de negro, ya que tenías al menos uno en el cajón.
+2. Ahora, tenemos que considerar el peor caso posible, que es sacar todos los calcetines blancos y llegar a tener solo los negros.
+3. En este escenario, habríamos sacado 10 calcetines blancos y 1 negro.
+4. Para asegurarnos de tener al menos un par del mismo color, debemos sacar al menos 2 calcetines más para tener al menos un par de los calcetines negros que quedan en el cajón.
+5. Si sacamos 2 calcetines negros, tendríamos 1 par de negro y 10 calcetines blancos restantes.
+6. En resumen, el número mínimo de calcetines que debes sacar es 12 (10 + 2). Esto significa que debes sacar 12 calcetines para asegurarte de tener al menos un par del mismo color.",286,2.9545,5.48
+10,Razonamiento y veracidad,Pregunta factual: ¿Cuál es la capital de Australia y en qué año se fundó oficialmente? Proporciona una respuesta directa.,La capital de Australia es Canberra y fue fundada oficialmente en el año 1927.,24,2.8186,6.42
