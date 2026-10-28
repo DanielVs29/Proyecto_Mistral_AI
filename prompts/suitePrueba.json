@@ -1,0 +1,17 @@
+[
+{
+"id": 1,
+"categoria": "código",
+"prompt": "Escribe una función muy corta en Python que reciba una lista de números enteros y devuelva una nueva lista que contenga únicamente los números pares."
+},
+{
+"id": 2,
+"categoria": "resumen",
+"prompt": "Resume el siguiente texto en una sola oración breve: 'La inteligencia artificial es una rama de la informática que busca diseñar sistemas y máquinas capaces de realizar tareas que normalmente requerirían de la inteligencia humana, tales como el aprendizaje, la toma de decisiones, la percepción visual y el procesamiento del lenguaje natural.'"
+},
+{
+"id": 3,
+"categoria": "razonamiento",
+"prompt": "Responde de forma directa a este acertijo lógico: Si un tren eléctrico viaja hacia el norte a 120 km/h y el viento sopla hacia el este a 30 km/h, ¿hacia qué dirección vuela el humo del tren?"
+}
+]
