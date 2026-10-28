@@ -30,18 +30,12 @@ cd Proyecto_Mistral_AI
 ollama pull mistral
 ```
 
-3. Instalar las dependencias de Python:
-```bash
-pip install -r requirements.txt
-```
-
-4. Ejecutar el script:
-```bash
-python src/inference.py --model mistral --prompts prompts/suite.json
-```
-
-5. Ejecutar mediante Docker:
+3. Construir la imagen de Docker:
 ```bash
 docker build -t mistral-eval .
+```
+
+4. Ejecutar mediante Docker:
+```bash
 docker run --rm -e OLLAMA_HOST="host.docker.internal" mistral-eval --model mistral --prompts prompts/suite.json
 ```
