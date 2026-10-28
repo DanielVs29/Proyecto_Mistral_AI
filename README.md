@@ -37,5 +37,5 @@ docker build -t mistral-eval .
 
 4. Ejecutar mediante Docker:
 ```bash
-docker run --rm -e OLLAMA_HOST="host.docker.internal" mistral-eval --model mistral --prompts prompts/suite.json
+docker run --rm -e OLLAMA_HOST="host.docker.internal" -v "$(pwd)/results:/app/results" mistral-eval --model mistral --prompts prompts/suite.json
 ```
