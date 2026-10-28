@@ -43,5 +43,5 @@ python src/inference.py --model mistral --prompts prompts/suite.json
 5. Ejecutar mediante Docker:
 ```bash
 docker build -t mistral-eval .
-docker run --network="host" mistral-eval
+docker run --rm -e OLLAMA_HOST="host.docker.internal" mistral-eval --model mistral --prompts prompts/suite.json
 ```

@@ -1,14 +1,16 @@
 import argparse
 import json
 import csv
+import os
 import time
 import requests
 import sys
 from pathlib import Path
 
 def llamar_ollama(prompt, modelo, temperatura, max_tokens):
-    url = "http://localhost:11434/api/generate"
-    #url = "http://host.docker.internal:11434/api/generate"
+    host = os.environ.get("OLLAMA_HOST", "localhost")
+    url = f"http://{host}:11434/api/generate"
+    
     payload = {
         "model": modelo,
         "prompt": prompt,
